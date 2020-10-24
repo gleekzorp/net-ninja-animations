@@ -21,5 +21,30 @@ img {
   /* transform: rotateX(90deg); */
   /* transform: rotateY(90deg); */
   /* transform: rotateZ(90deg) */
-  transform: rotateZ(-90deg) translateY(200px) scale(2)
+  /* transform: rotateZ(-90deg) translateY(200px) scale(2) */
+}
+
+.circle {
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 1s;
+  /* transition: background 1s; */
+  /* transition: background 1s, transform 0.3s; */
+  /* transition: background 1s, transform 0.3s 1s; */
+  /* transition: background 1s, transform 0.3s 1s linear; */
+  /* transition: background 1s, transform 1s 1s ease; */
+  /* transition: background 1s, transform 1s 1s ease-in; */
+  /* transition: background 1s, transform 1s 1s ease-out; */
+  /* transition: background 1s, transform 1s 1s ease-in-out; */
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
 }
