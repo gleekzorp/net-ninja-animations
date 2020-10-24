@@ -48,8 +48,12 @@ html, body{
   animation-name: drive;
   animation-duration: 3s;
   animation-fill-mode: both;
-  /* animation-iteration-count: 3; */
   animation-iteration-count: infinite;
+  /* animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-in-out; */
+  /* https://cubic-bezier.com/ */
+  animation-timing-function: cubic-bezier(0,.69,1,.38);
 }
 .luigi {
   position: absolute;
@@ -59,9 +63,7 @@ html, body{
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  /* animation-direction: reverse; */
-  /* animation-direction: alternate; */
-  animation-direction: alternate-reverse;
+  animation-direction: reverse;
 }
 
 
