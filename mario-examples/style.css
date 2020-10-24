@@ -47,28 +47,23 @@ html, body{
   left: 0px;
   animation-name: drive;
   animation-duration: 3s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  /* animation-fill-mode: backwards; */
-
-  /* Use both with the translate 200px */
-  /*
-    Without the `both` it will pop to the begging 200px translate after 2sec
-    instead of starting at the 200px translate
-  */
-  /* animation-fill-mode: both; */
+  animation-fill-mode: both;
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
 }
 
 
 /*// KEYFRAMES //*/
 
+/* Make sure to resize the window smaller */
 @keyframes drive {
   from {
-    transform: translateX(0);
-    /* transform: translateX(200px); */
+    transform: translateX(-200px);
+    /* transform: translateX(-100px); */
   }
   to {
-    transform: translateX(700px);
+    /* transform: translateX(1000px); */
+    transform: translateX(120vw);
   }
 }
 
